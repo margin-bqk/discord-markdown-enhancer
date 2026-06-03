@@ -1,6 +1,6 @@
 # Discord Markdown Enhancer
 
-Chrome Extension that renders markdown tables and Mermaid diagrams in Discord's web app.
+Chrome / Firefox Extension that renders markdown tables and Mermaid diagrams in Discord's web app.
 
 ## Features
 
@@ -11,11 +11,23 @@ Chrome Extension that renders markdown tables and Mermaid diagrams in Discord's 
 
 ## Install (Developer Mode)
 
+### Chrome
+
 1. Clone this repo
-2. Download dependencies (see below)
+2. Download dependencies (see [Setup Libraries](#setup-libraries))
 3. Open `chrome://extensions/`
 4. Enable "Developer mode"
 5. Click "Load unpacked" and select this directory
+
+### Firefox
+
+1. Clone this repo
+2. Download dependencies (see [Setup Libraries](#setup-libraries))
+3. Open `about:debugging#/runtime/this-firefox`
+4. Click "Load Temporary Add-on…"
+5. Select `manifest.json` from this directory
+
+> For permanent install, package as `.zip` and submit to [Mozilla Add-ons](https://addons.mozilla.org/) for signing. Or use Firefox Developer Edition / Nightly to set `xpinstall.signatures.required = false`.
 
 ## Setup Libraries
 
@@ -31,7 +43,7 @@ curl -L -o libs/mermaid.min.js https://cdn.jsdelivr.net/npm/mermaid/dist/mermaid
 
 ## Usage
 
-1. Open Discord in Chrome (discord.com)
+1. Open Discord in your browser (discord.com)
 2. Paste a markdown table in a code block:
 
 ````

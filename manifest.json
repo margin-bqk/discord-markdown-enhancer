@@ -3,6 +3,12 @@
   "name": "Discord Markdown Enhancer",
   "description": "Render markdown tables and Mermaid diagrams in Discord",
   "version": "0.1.0",
+  "browser_specific_settings": {
+    "gecko": {
+      "id": "discord-markdown-enhancer@miyashita337",
+      "strict_min_version": "115.0"
+    }
+  },
   "permissions": [],
   "content_scripts": [
     {
